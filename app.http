@@ -1,0 +1,51 @@
+### POST a new transaction
+POST http://localhost:3000/transactions
+Content-Type: application/json
+
+{
+    "type": "income",
+    "category": "Salary",
+    "amount": 5000,
+    "date": "2024-10-21",
+    "description": "October salary"
+}
+
+###
+
+### GET all transactions
+GET http://localhost:3000/transactions
+Accept: application/json
+
+###
+
+
+### GET all transactions
+GET http://localhost:3000/transactions/1
+Accept: application/json
+
+###
+
+### PUT to update a transaction
+PUT http://localhost:3000/transactions/1
+Content-Type: application/json
+
+{
+    "type": "income",
+    "category": "Salary",
+    "amount": 5500,
+    "date": "2024-10-21",
+    "description": "Updated October salary"
+}
+
+###
+
+### DELETE a transaction
+DELETE http://localhost:3000/transactions/1
+
+###
+
+### GET all transactions
+GET http://localhost:3000/summary
+Accept: application/json
+
+###
